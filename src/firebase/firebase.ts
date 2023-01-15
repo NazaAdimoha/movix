@@ -1,17 +1,14 @@
-type FirebaseConfig = {
-    apiKey: string;
-    authDomain: string;
-    projectId: string;
-    storageBucket: string;
-    messagingSenderId: string;
-    appId: string;
-}
+//import firebase from firebase
+import firebase from "firebase/app";
 
-export const firebaseConfig: FirebaseConfig = {
-    apiKey: "AIzaSyBDPaIZD_-RE0UgeVFjYcwSx47rQxU0ge0",
-    authDomain: "movix-aa85a.firebaseapp.com",
-    projectId: "movix-aa85a",
-    storageBucket: "movix-aa85a.appspot.com",
-    messagingSenderId: "136694868474",
-    appId: "1:136694868474:web:41b3588566659344e3dc43"
+ const firebaseConfig = {
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
   };
+
+  //create a firebase initialize app
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
