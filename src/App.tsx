@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="text-3xl text-blue-700">
       Hello World
     </div>
   );
