@@ -10,5 +10,5 @@ import firebase from "firebase/app";
     appId: process.env.REACT_APP_FIREBASE_APP_ID,
   };
 
-  //create a firebase initialize app
+  //create a firebase intialize app
   const firebaseApp = firebase.initializeApp(firebaseConfig);
